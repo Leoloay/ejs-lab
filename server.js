@@ -59,6 +59,10 @@ app.get("/", (req, res) => {
   res.render("home.ejs", { RESTAURANT })
 })
 
+app.get("/menu", (req, res) => {
+  res.render("menu.ejs", { RESTAURANT })
+})
+
 app.get("/", (req, res) => {
   res.send("Hello There!")
 })
